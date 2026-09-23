@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nikunj Chaudhary | PhD in Economics, IIM Lucknow</title>
+  <meta name="description" content="Personal academic website of Nikunj Chaudhary, 3rd year PhD Candidate in Economics at the Indian Institute of Management (IIM) Lucknow. Applied Microeconomics, Development Economics, Econometrics.">
+  <meta name="author" content="Nikunj Chaudhary">
+  
+  <!-- Open Graph / Social Sharing -->
+  <meta property="og:title" content="Nikunj Chaudhary | PhD in Economics, IIM Lucknow">
+  <meta property="og:description" content="3rd year PhD Scholar in Economics at IIM Lucknow. Research in Applied Microeconomics, Development Economics, and Empirical Public Policy.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://nikunj199805.github.io/">
+
+  <style>
+    :root {
+      --bg: #ffffff;
+      --text: #1a1a1a;
+      --text-muted: #555555;
+      --link: #004fb6;
+      --link-visited: #502796;
+      --border: #e2e2e2;
+      --card-bg: #f8f9fa;
+      --tag-bg: #f0f2f5;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #121315;
+        --text: #e1e3e6;
+        --text-muted: #9aa0a6;
+        --link: #6db1ff;
+        --link-visited: #b392f0;
+        --border: #282a2e;
+        --card-bg: #1a1b1e;
+        --tag-bg: #22252a;
+      }
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      line-height: 1.5;
+      font-size: 16px;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      padding: 0 16px;
+      margin: 50px auto 80px auto;
+      max-width: 650px;
+      background-color: var(--bg);
+      color: var(--text);
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    #maincontent {
+      max-width: 42em;
+      margin: 15px auto;
+    }
+
+    h1, h2, h3 {
+      font-weight: 600;
+      color: var(--text);
+    }
+
+    h1.name {
+      font-size: 26px;
+      margin-bottom: 4px;
+      letter-spacing: -0.01em;
+    }
+
+    .subtitle {
+      font-size: 16px;
+      color: var(--text-muted);
+      margin-top: 0;
+      margin-bottom: 14px;
+      line-height: 1.4;
+    }
+
+    .links-bar {
+      margin-bottom: 28px;
+      font-size: 15px;
+      word-spacing: 2px;
+    }
+
+    .links-bar a {
+      white-space: nowrap;
+    }
+
+    a {
+      color: var(--link);
+      text-decoration: underline;
+      text-underline-offset: 2px;
+    }
+
+    a:hover {
+      text-decoration: none;
+    }
+
+    a:visited {
+      color: var(--link-visited);
+    }
+
+    .section-title {
+      font-size: 16px;
+      font-weight: 600;
+      margin-top: 32px;
+      margin-bottom: 10px;
+      color: var(--text);
+    }
+
+    ul {
+      margin-top: 6px;
+      margin-bottom: 18px;
+      padding-left: 22px;
+    }
+
+    li {
+      margin-bottom: 8px;
+    }
+
+    ul ul {
+      margin-top: 4px;
+      margin-bottom: 6px;
+      padding-left: 20px;
+    }
+
+    ul ul li {
+      margin-bottom: 4px;
+      color: var(--text-muted);
+    }
+
+    /* Paper entries & details */
+    .paper-entry {
+      margin-bottom: 16px;
+    }
+
+    .paper-title {
+      font-weight: 500;
+      color: var(--text);
+    }
+
+    .paper-meta {
+      font-size: 14px;
+      color: var(--text-muted);
+      margin-top: 2px;
+    }
+
+    .paper-links {
+      font-size: 13.5px;
+      margin-top: 4px;
+    }
+
+    details {
+      margin-top: 6px;
+    }
+
+    summary {
+      font-size: 13.5px;
+      cursor: pointer;
+      color: var(--link);
+      user-select: none;
+      display: inline-block;
+      text-decoration: underline;
+      text-underline-offset: 2px;
+    }
+
+    summary:hover {
+      text-decoration: none;
+    }
+
+    details[open] summary {
+      margin-bottom: 6px;
+    }
+
+    .abstract-text {
+      font-size: 14.5px;
+      line-height: 1.45;
+      padding: 10px 14px;
+      background: var(--card-bg);
+      border-left: 3px solid var(--border);
+      border-radius: 2px;
+      color: var(--text);
+      margin-top: 4px;
+      margin-bottom: 6px;
+    }
+
+    .tag {
+      display: inline-block;
+      font-size: 12px;
+      padding: 2px 7px;
+      border-radius: 4px;
+      background-color: var(--tag-bg);
+      color: var(--text-muted);
+      margin-right: 5px;
+      margin-bottom: 4px;
+      font-family: inherit;
+    }
+
+    .footer {
+      margin-top: 48px;
+      padding-top: 18px;
+      border-top: 1px solid var(--border);
+      font-size: 13px;
+      color: var(--text-muted);
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    @media print {
+      body {
+        margin: 20px auto;
+        font-size: 12pt;
+        color: #000;
+        background: #fff;
+      }
+      a {
+        text-decoration: none;
+        color: #000;
+      }
+      .links-bar, .footer {
+        display: none;
+      }
+      details[open] summary, summary {
+        display: none;
+      }
+      .abstract-text {
+        background: transparent;
+        border-left: 1px solid #ccc;
+      }
+    }
+  </style>
+</head>
+
+<body>
+<div id="maincontent" style="margin-top: 50px;">
+
+  <!-- Header -->
+  <header>
+    <h1 class="name">Nikunj Chaudhary</h1>
+    <p class="subtitle">
+      PhD Candidate in Economics (3rd Year) &middot; Indian Institute of Management Lucknow
+    </p>
+
+    <div class="links-bar">
+      <a href="cv.pdf">CV (PDF)</a> &middot;
+      <a href="mailto:nikunj.phd@iiml.ac.in">Email</a> &middot;
+      <a href="https://scholar.google.com/" target="_blank" rel="noopener">Google Scholar</a> &middot;
+      <a href="https://github.com/Nikunj199805" target="_blank" rel="noopener">GitHub</a> &middot;
+      <a href="https://papers.ssrn.com/" target="_blank" rel="noopener">SSRN</a> &middot;
+      <a href="https://x.com/" target="_blank" rel="noopener">Twitter/X</a> &middot;
+      <a href="https://linkedin.com/" target="_blank" rel="noopener">LinkedIn</a>
+    </div>
+  </header>
+
+  <!-- About Me -->
+  <div class="section-title">Some things about me:</div>
+  <ul>
+    <li>Doctoral candidate (3rd year) in the Economics Area at the <a href="https://www.iiml.ac.in/" target="_blank" rel="noopener">Indian Institute of Management Lucknow</a> (IIM Lucknow)</li>
+    <li>Primary fields: Applied Microeconomics, Development Economics, and Empirical Public Policy</li>
+    <li>Secondary interests: Empirical Industrial Organization, Labor Economics, and Political Economy</li>
+    <li>Methodological focus: Quasi-experimental causal inference, micro-econometrics, and policy evaluation</li>
+    <li>Working with large-scale micro-datasets: Periodic Labour Force Survey (PLFS), NSSO surveys, CMIE Consumer Pyramids, and NFHS</li>
+    <li>Comfortable with R, Stata, Python, and Julia for reproducible econometric workflows</li>
+    <li>Based in Lucknow, India</li>
+  </ul>
+
+  <!-- Research Interests -->
+  <div class="section-title">Research Fields:</div>
+  <ul>
+    <li><strong>Primary:</strong> Applied Microeconomics &middot; Development Economics &middot; Policy Evaluation</li>
+    <li><strong>Secondary:</strong> Labor Markets &amp; Informality &middot; Firm Dynamics &middot; Human Capital &middot; Political Economy</li>
+  </ul>
+
+  <!-- Working Papers -->
+  <div class="section-title">Working Papers:</div>
+  <ul>
+    <li class="paper-entry">
+      <div class="paper-title">Evaluating the Spillover Effects of Public Infrastructure on Local Labor Markets: Evidence from India</div>
+      <div class="paper-meta">Solo authored &middot; <em>Working Paper, 2026</em></div>
+      <div class="paper-links">
+        <a href="#paper1-pdf">[Draft PDF]</a> &middot;
+        <a href="https://github.com/Nikunj199805" target="_blank" rel="noopener">[Replication Code]</a>
+      </div>
+      <details>
+        <summary>Abstract</summary>
+        <div class="abstract-text">
+          This paper investigates the direct and spatial spillover impacts of targeted rural connectivity programs on agricultural-to-non-farm occupational transitions and real wages across contiguous districts. Utilizing staggered rollouts and high-resolution administrative data combined with PLFS micro-data, I find substantial spatial reallocation of informal labor with heterogeneous impacts across skilled versus unassisted households.
+        </div>
+      </details>
+    </li>
+
+    <li class="paper-entry">
+      <div class="paper-title">Credit Access, Informality, and Firm Growth in Developing Economies</div>
+      <div class="paper-meta">With co-authors &middot; <em>Under Review</em></div>
+      <div class="paper-links">
+        <a href="#paper2-pdf">[Draft PDF]</a> &middot;
+        <a href="https://github.com/Nikunj199805" target="_blank" rel="noopener">[Data &amp; Code]</a>
+      </div>
+      <details>
+        <summary>Abstract</summary>
+        <div class="abstract-text">
+          We study how regulatory thresholds and targeted priority-sector credit affect transition margins between informal and formal micro-enterprises. Using regression discontinuity designs on administrative enterprise surveys, we show that credit availability mitigates liquidity crunches but interacts with local regulatory enforcement to shape long-run formalization choices.
+        </div>
+      </details>
+    </li>
+  </ul>
+
+  <!-- Work in Progress -->
+  <div class="section-title">Work in Progress:</div>
+  <ul>
+    <li>
+      <strong>Digital Public Infrastructure and Social Welfare Leakage:</strong> An empirical investigation into biometric authentication mechanisms, direct benefit transfers, and recipient welfare distribution in rural India.
+    </li>
+    <li>
+      <strong>Climate Shocks, Internal Migration, and Urban Informal Safety Nets:</strong> Exploring household coping strategies and labor market resilience in response to extreme rainfall anomalies.
+    </li>
+    <li>
+      <strong>Gender Wage Gap and Sectoral Transition Dynamics:</strong> Analyzing long-term trends using Indian labor force rounds.
+    </li>
+  </ul>
+
+  <!-- Teaching Experience -->
+  <div class="section-title">Teaching Experience:</div>
+  <ul>
+    <li>
+      <strong>Indian Institute of Management Lucknow</strong>
+      <ul>
+        <li>Teaching Assistant, Microeconomics for Managers (MBA / PGP Core)</li>
+        <li>Teaching Assistant, Macroeconomics &amp; Global Economy (PGP Core)</li>
+        <li>Teaching Assistant, Econometric Methods &amp; Applied Causal Inference (Doctoral / PhD Elective)</li>
+      </ul>
+    </li>
+  </ul>
+
+  <!-- Some things I believe (Nat.org style) -->
+  <div class="section-title">Some things I believe:</div>
+  <ul>
+    <li>Causal identification without institutional knowledge is fragile</li>
+    <ul>
+      <li>Econometric estimators are only as good as the understanding of the institutional data-generating process</li>
+      <li>Spending time reading government notifications and fieldwork documentation pays higher returns than obsessing over fragile higher-order polynomials</li>
+    </ul>
+    <li>Good economics raises the ceiling, not just documents the floor</li>
+    <ul>
+      <li>Pointing out welfare losses is easy; identifying feasible institutional mechanisms that unlock productivity is where economists add real value</li>
+      <li>Development economics is fundamentally about removing structural frictions so people can realize their agency</li>
+    </ul>
+    <li>Replication and open science must be default</li>
+    <ul>
+      <li>Every empirical claim should have clean, documented code and publicly accessible synthetic or raw data wherever legally permissible</li>
+      <li>Unreproducible results pollute the collective knowledge base and misguide policy</li>
+    </ul>
+    <li>Speed of iteration beats perfection in early stages</li>
+    <ul>
+      <li>Plot the raw data first before running complex regressions</li>
+      <li>Contact with empirical facts forces you to kill bad hypotheses early; write down your core mechanism in simple equations before building large models</li>
+    </ul>
+    <li>Economic incentives explain much, but culture and norms constrain the feasible set</li>
+    <ul>
+      <li>Institutions that work in textbook models often stall because informal social contracts dominate legalistic enforcement</li>
+    </ul>
+  </ul>
+
+  <!-- Education -->
+  <div class="section-title">Education:</div>
+  <ul>
+    <li>
+      <strong>Indian Institute of Management Lucknow (IIM Lucknow)</strong>, India<br>
+      PhD (Doctoral Programme) in Economics &middot; 2024 &ndash; Present (Expected 2027)<br>
+      <em>Comprehensive exams passed &middot; Dissertation stage</em>
+    </li>
+    <li>
+      <strong>Master's Degree in Economics</strong><br>
+      Specialization in Econometrics and Development Economics
+    </li>
+    <li>
+      <strong>Bachelor's Degree</strong><br>
+      Major in Economics / Quantitative Methods
+    </li>
+  </ul>
+
+  <!-- Code, Datasets & Notes -->
+  <div class="section-title">Code &amp; Replication Resources:</div>
+  <ul>
+    <li>Clean data extraction and merging scripts for Indian microdata (PLFS, NSSO, CMIE) on <a href="https://github.com/Nikunj199805" target="_blank" rel="noopener">GitHub</a></li>
+    <li>Notes on applied econometrics: DiD with staggered adoption, Bartik shift-share instruments, and synthetic controls</li>
+  </ul>
+
+  <!-- Contact & Location -->
+  <div class="section-title">Contact &amp; Location:</div>
+  <ul>
+    <li><strong>Email:</strong> <a href="mailto:nikunj.phd@iiml.ac.in">nikunj.phd@iiml.ac.in</a> / <a href="mailto:nikunj199805@gmail.com">nikunj199805@gmail.com</a></li>
+    <li><strong>Office:</strong> Doctoral Scholars Block, Indian Institute of Management Lucknow</li>
+    <li><strong>Address:</strong> Prabandh Nagar, IIM Road, Lucknow, Uttar Pradesh 226013, India</li>
+  </ul>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <span>&copy; <span id="year">2026</span> Nikunj Chaudhary</span>
+    <span>Modeled with clean HTML/CSS &middot; Hosted on GitHub Pages</span>
+  </footer>
+
+</div>
+
+<script>
+  // Simple current year updater
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
